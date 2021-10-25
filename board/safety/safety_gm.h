@@ -9,9 +9,9 @@
 //      brake > 0mph
 
 const int GM_MAX_STEER = 600;
-const int GM_MAX_RT_DELTA = 75;          // 4 max rate up * 50Hz send rate * 250000 RT interval / 1000000 = 50 ; 50 * 1.5 for safety pad = 75
+const int GM_MAX_RT_DELTA = 128;          // 4 max rate up * 50Hz send rate * 250000 RT interval / 1000000 = 50 ; 50 * 1.5 for safety pad = 75
 const uint32_t GM_RT_INTERVAL = 250000;    // 250ms between real time checks
-const int GM_MAX_RATE_UP = 8;
+const int GM_MAX_RATE_UP = 10;
 const int GM_MAX_RATE_DOWN = 20;
 const int GM_DRIVER_TORQUE_ALLOWANCE = 50;
 const int GM_DRIVER_TORQUE_FACTOR = 4;
