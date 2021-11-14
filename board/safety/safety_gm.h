@@ -156,12 +156,12 @@ static int gm_tx_hook(CAN_FIFOMailBox_TypeDef *to_send) {
     if (current_controls_allowed) {
 
       // *** global torque limit check ***
-      violation |= max_limit_check(desired_torque, GM_MAX_STEER, -GM_MAX_STEER);
+      //violation |= max_limit_check(desired_torque, GM_MAX_STEER, -GM_MAX_STEER);
 
       // *** torque rate limit check ***
-      violation |= driver_limit_check(desired_torque, desired_torque_last, &torque_driver,
-        GM_MAX_STEER, GM_MAX_RATE_UP, GM_MAX_RATE_DOWN,
-        GM_DRIVER_TORQUE_ALLOWANCE, GM_DRIVER_TORQUE_FACTOR);
+      //violation |= driver_limit_check(desired_torque, desired_torque_last, &torque_driver,
+        //GM_MAX_STEER, GM_MAX_RATE_UP, GM_MAX_RATE_DOWN,
+        //GM_DRIVER_TORQUE_ALLOWANCE, GM_DRIVER_TORQUE_FACTOR);
 
       // used next time
       desired_torque_last = desired_torque;
